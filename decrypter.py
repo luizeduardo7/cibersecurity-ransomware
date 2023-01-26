@@ -1,8 +1,9 @@
 import os
 import pyaes
+import sys
 
 ## abrir o arquivo criptografado
-file_name = "teste.txt.ransomwaretroll"
+file_name = sys.argv[1]
 file = open(file_name, "rb")
 file_data = file.read()
 file.close()
